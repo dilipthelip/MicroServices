@@ -1,0 +1,26 @@
+#spring.config.location: C:\\Dilip\\Study\\MicroServices\\
+#bootrest: Hello from Yaml file
+
+spring:
+    profiles: dev
+server:
+      port: 8080
+      
+secutiry.user.name: guest
+secutiry.user.password: guest123
+
+bootrest: Hello from dev environment Yaml file
+      
+---    
+spring:
+    profiles: test
+server:
+      port: 8080
+bootrest: Hello from test environment Yaml file
+
+---
+spring:
+    profiles: prod
+server:
+      port: 8080
+bootrest: Hello from prod environment Yaml file
