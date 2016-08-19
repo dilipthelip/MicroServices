@@ -13,7 +13,11 @@ public class CustomerRegistrar {
 	
 	@Autowired
 	 CustomerRepository customerRespository;
-
+	/**
+	 * 
+	 * @param customer
+	 * @return
+	 */
 	Customer register(Customer customer){
 	    Optional<Customer> existingCustomer = customerRespository.findByName(customer.getName());
 	    if (existingCustomer.isPresent()){
