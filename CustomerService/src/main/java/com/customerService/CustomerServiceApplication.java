@@ -26,6 +26,7 @@ public class CustomerServiceApplication {
 	    repo.save(new Customer("Tom","tom@boot.com"));
 	    repo.save(new Customer("Sean","sean@boot.com"));
 	    repo.save(new Customer("jhj","sean@boot.com"));
+	    
 	  };
 	  }
 }
